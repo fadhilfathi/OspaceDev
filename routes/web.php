@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 Route::post('/storestud', "UserController@stores");
-Route::post('/storeorg', "UserController@storeo")
+Route::post('/storeorg', "UserController@storeo");
