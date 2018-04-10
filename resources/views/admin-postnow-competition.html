@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<title>Admin Post Now</title>
+	</head>
+	<body>
+		<nav class="navbar justify-content-between navbar-admin sticky-top">
+			<a class="navbar-brand"><img src="assets/logo/logo.jpg"><span class="user-def"><span class="margin-def">Administrator</span></span></a>
+			<form class="form-inline">
+				<div class="dropdown">
+					<a class="username" id="dropdown-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<div class="round-username rounded-circle">
+							<img src="http://cdn2.tstatic.net/suryamalang/foto/bank/images/albert-einstein-arthur-sasse_20160202_131247.jpg">
+						</div>
+						<span class="text-username">Admin</span>
+					</a>
+					<div class="dropdown-menu dropdown-admin" aria-labelledby="dropdown-user">
+						<a class="dropdown-item" href="#">Logout</a>
+					</div>
+				</div>
+			</form>
+		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="col-sm-3 col-md-2 d-none d-sm-block sidebar sidebar-admin">
+					<ul class="nav nav-pills flex-column">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">
+								<span class="sidebar-menu"><i class="fa fa-admin fa-sign-out"></i>Post</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<span class="sidebar-menu"><i class="fa fa-admin fa-check-circle-o"></i> Selection Post</span></a>
+								</li>
+							</ul>
+							<div class="footer-sidebar">
+								<span class="sidebar-menu copyright">Copyright &copy; 2017 Ospace.<br></span>
+								<span class="sidebar-menu copyright">All Rights Reserved.</span>
+							</div>
+						</nav>
+						<div class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+							<div class="row">
+								<div class="col-md-8 offset-md-2">
+									<br><br>
+									<div class="card card-admin">
+										<div class="card-body">
+											Logo
+											<label class="btn">
+												<div class="circle-insertlogo">
+													<h1 class="plus-insert-logo">+
+													<input type="file" class="inputfile" id="customFile">
+													</h1>
+												</div>
+											</label>
+											<br>
+											<input class="form-control" type="text" placeholder="Organization">
+											<br>
+											<input class="form-control" type="text" placeholder="Competition name">
+											<br>
+											University
+											<div class="custom-control custom-radio">
+												<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+												<label class="custom-control-label" for="customRadio1">University of Brawijaya</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+												<label class="custom-control-label" for="customRadio2">University of Brawijaya</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+												<label class="custom-control-label" for="customRadio3">University of Brawijaya</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+												<label class="custom-control-label" for="customRadio4">University of Brawijaya</label>
+											</div><br>
+											Awards
+											<div class="custom-control custom-radio">
+												<input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+												<label class="custom-control-label" for="customRadio5">Rp. 0 - Rp. 249.999</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+												<label class="custom-control-label" for="customRadio6">Rp. 250.000 - Rp. 499.999</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
+												<label class="custom-control-label" for="customRadio7">Rp. 500.000 - Rp. 749.999</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
+												<label class="custom-control-label" for="customRadio8">Rp. 750.000 - Rp. 1.000.000</label>
+											</div><br>
+											<p>
+												<label for="date">Deadline</label><br>
+												<input id="date" type="date">
+											</p>
+											<br>
+											<input class="form-control" type="text" placeholder="Website">
+											<br>
+											<br>
+											<input class="form-control" type="text" placeholder="Information">
+											<br><br><br>
+											<button class="btn btn-admin btn-purple float-right">Post Now</button>
+										</div>
+									</div>
+									<br><br><br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Optional JavaScript -->
+				<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+			</body>
+		</html>

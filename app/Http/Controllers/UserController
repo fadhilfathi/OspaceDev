@@ -1,0 +1,11 @@
+<?php
+namespace App\Http\Controller;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Requesst;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\DB;
+Class UserController extends Controller{
+    public function store(Request $request){
+
+    }
+}
