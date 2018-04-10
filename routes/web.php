@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/store', "UserController@store");
+Route::post('/storestud', "UserController@stores");
+Route::post('/storeorg', "UserController@storeo")

@@ -46,13 +46,13 @@
 						<span class="font-size-32 font-roboto-bold">Sign Up</span><span class="border-title-signup"></span><span class="font-size-24 font-roboto color-grey-signup">Student</span>
 					</div>
 					<div class="card-margin-inside">
-						<form action="daftarwebstudent.php" class="form-signup2" method="post">
+					<form action="{{URL::to('/storestud')}}" class="form-signup2" method="post">
 							<div class="row">
 								<div class="col-md-8 offset-md-2">
 									<div class="form-group form-group-signup row">
-										<label for="organization" class="col-sm-3 col-form-label">Name</label>
+										<label for="namestudent" class="col-sm-3 col-form-label">Name</label>
 										<div class="col-sm-9">
-											<input class="form-control form-signup" type="text" id="namestudent">
+											<input class="form-control form-signup" type="text" id="namestudent" name"namestudent">
 										</div>
 									</div>
 								</div>
@@ -60,9 +60,9 @@
 							<div class="row">
 								<div class="col-md-8 offset-md-2">
 									<div class="form-group form-group-signup row">
-										<label for="emailid" class="col-sm-3 col-form-label">Email ID</label>
+										<label for="emailstudent" class="col-sm-3 col-form-label">Email ID</label>
 										<div class="col-sm-9">
-											<input class="form-control form-signup" type="text" id="emailidstudent">
+											<input class="form-control form-signup" type="text" id="emailstudent" name="emailstudent">
 										</div>
 									</div>
 								</div>
@@ -70,9 +70,9 @@
 							<div class="row">
 								<div class="col-md-8 offset-md-2">
 									<div class="form-group form-group-signup row">
-										<label for="phoneno" class="col-sm-3 col-form-label">Phone</label>
+										<label for="phonestudent" class="col-sm-3 col-form-label">Phone</label>
 										<div class="col-sm-9">
-											<input class="form-control form-signup" type="text" id="phonestudent">
+											<input class="form-control form-signup" type="text" id="phonestudent" name="phonestudent" >
 										</div>
 									</div>
 								</div>
@@ -80,9 +80,9 @@
 							<div class="row">
 								<div class="col-md-8 offset-md-2">
 									<div class="form-group form-group-signup row">
-										<label for="password" class="col-sm-3 col-form-label">Password</label>
+										<label for="passwordstudent	" class="col-sm-3 col-form-label">Password</label>
 										<div class="col-sm-9">
-											<input class="form-control form-signup" type="password" id="passwordstudent">
+											<input class="form-control form-signup" type="password" id="passwordstudent" name="passwordstudent" >
 										</div>
 									</div>
 								</div>
@@ -90,9 +90,9 @@
 							<div class="row">
 								<div class="col-md-8 offset-md-2">
 									<div class="form-group form-group-signup row">
-										<label for="confirm" class="col-sm-3 col-form-label">Confirm</label>
+										<label for="passwordstudentconfirm" class="col-sm-3 col-form-label">Confirm</label>
 										<div class="col-sm-9">
-											<input class="form-control form-signup" type="password" id="passwordstudentconfirm">
+											<input class="form-control form-signup" type="password" id="passwordstudentconfirm" name="passwordstudentconfirm" >
 										</div>
 									</div>
 								</div>
@@ -152,7 +152,7 @@
 						<span class="font-size-32 font-roboto-bold">Sign Up</span><span class="border-title-signup"></span><span class="font-size-24 font-roboto color-grey-signup">Organization</span>
 					</div>
 					<div class="card-margin-inside">
-						<form action="daftarweborganization.php" class="form-signup2" method="post">
+						<form action="{{URL::to('/storeorg')}}" class="form-signup2" method="post">
 						<div class="row">
 							<div class="col-md-8 offset-md-2">
 								Logo
@@ -178,9 +178,9 @@
 						<div class="row">
 							<div class="col-md-8 offset-md-2">
 								<div class="form-group form-group-signup row">
-									<label for="emailid" class="col-sm-3 col-form-label">Email ID</label>
+									<label for="emailorganization" class="col-sm-3 col-form-label">Email ID</label>
 									<div class="col-sm-9">
-										<input class="form-control form-signup" type="text" id="emailidoraganization">
+										<input class="form-control form-signup" type="text" id="emailoraganization" name="emailorganization" >
 									</div>
 								</div>
 							</div>
@@ -188,9 +188,9 @@
 						<div class="row">
 							<div class="col-md-8 offset-md-2">
 								<div class="form-group form-group-signup row">
-									<label for="phoneno" class="col-sm-3 col-form-label">Phone No.</label>
+									<label for="phoneorganization" class="col-sm-3 col-form-label">Phone No.</label>
 									<div class="col-sm-9">
-										<input class="form-control form-signup" type="text" id="phonenoorganization">
+										<input class="form-control form-signup" type="text" id="phonenoorganization" name="phoneoorganization" >
 									</div>
 								</div>
 							</div>
@@ -198,9 +198,9 @@
 						<div class="row">
 							<div class="col-md-8 offset-md-2">
 								<div class="form-group form-group-signup row">
-									<label for="password" class="col-sm-3 col-form-label">Password</label>
+									<label for="passwordorganization" class="col-sm-3 col-form-label">Password</label>
 									<div class="col-sm-9">
-										<input class="form-control form-signup" type="password" id="passwordorganization">
+										<input class="form-control form-signup" type="password" id="passwordorganization" name="passwordorganization" >
 									</div>
 								</div>
 							</div>
@@ -208,9 +208,9 @@
 						<div class="row">
 							<div class="col-md-8 offset-md-2">
 								<div class="form-group form-group-signup row">
-									<label for="confirm" class="col-sm-3 col-form-label">Confirm</label>
+									<label for="passwordconfirmorganization" class="col-sm-3 col-form-label">Confirm</label>
 									<div class="col-sm-9">
-										<input class="form-control form-signup" type="passwordorganizationconfirm">
+										<input class="form-control form-signup" type="password" id="passwordconfirmorganization" name="passwordconfirmorganization" >
 									</div>
 								</div>
 							</div>
@@ -235,7 +235,7 @@
 						$(function () {
 						$("#signuporganization").click(function () {
 							var passwordo = $("#passwordorganization").val();
-							var confirmPasswordo = $("#passwordorganizationconfirm").val();
+							var confirmPasswordo = $("#passwordconfirmorganization").val();
 							var termso = $("#defaultCheck2:checked").val();
 							if (passwordo != confirmPasswordo) {
 									alert("Password tidak sama");
